@@ -13,16 +13,19 @@
     }
     return kratnost;
 }
+void print(int kratnost)
+{
+    if (kratnost == 1)
+    {
+        Console.WriteLine("Да");
+    }
+    else
+    {
+        Console.WriteLine("Нет");
+    }
+}
 
-int a = 161;
+int a = 3703;
 
 int kratnost = prov(a);
-
-if (kratnost == 1)
-{
-    Console.WriteLine("Да");
-}
-else
-{
-    Console.WriteLine("Нет");
-}
+print(kratnost);
