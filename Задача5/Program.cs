@@ -1,2 +1,26 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//int sqar(int num1)
+//{
+//    int sq = num1 * num1;
+//    return sq;
+//}
+//метод возведения в квадрат первого числа. C начала составил программу с использованием этого метода. Она работала.
+//Позже решил добавить метод void. И понял, что его будет достаточно. Но оставлю в коментариях код целиком.
+
+
+void print(int num1, int num2)   //метод проверки равенства квадрата первого числа второму и печать результата
+{ 
+    if (num2 == num1*num1)
+    {
+        Console.WriteLine("Да");
+    }
+    else
+    {
+        Console.WriteLine("Нет");
+    }
+}
+
+int a = 6;
+int b = 46;
+
+//int sq = sqar(a);
+print(a, b);
