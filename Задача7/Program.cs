@@ -1,13 +1,20 @@
-﻿int a = 258713658;
+﻿int schetNumbers(int num1) //преобразование логарифма в цельночисловой тип и подсчет значности числа
+{
+    int Count = (int)Math.Log10(num1) + 1;
+    return Count;
+}
 
-int Count = (int)Math.Log10(a) + 1; //преобразование логарифма в цельночисловой тип
+int TherdNumbers(int num1, int num2) //нахождение первых трёх цифр числа
+{
+    int result = num1 / (int)Math.Pow(10, (num2 - 3));
+    return result;
+}
 
-int delit = (int)Math.Pow(10, (Count-3));
-//Console.WriteLine(delit);
+int a = 25713658;
 
-int result = a / delit;
+int Count = schetNumbers(a);
+int result = TherdNumbers(a, Count);
 
-int itog = result%10; //это покажет третью цифру числа
-Console.WriteLine(result);
+int itog = result % 10; //это покажет третью цифру числа
+
 Console.WriteLine(itog);
-//Console.WriteLine("5^4 = " + Math.Pow(5, 4));
