@@ -10,11 +10,18 @@ int TherdNumbers(int num1, int num2) //нахождение первых трё�
     return result;
 }
 
-int a = 25713658;
+int a = 5725;
 
-int Count = schetNumbers(a);
-int result = TherdNumbers(a, Count);
+if (a < 100)
+{
+    Console.WriteLine("третьей цифры нет");
+}
+else
+{
+    int Count = schetNumbers(a);
+    int result = TherdNumbers(a, Count);
 
-int itog = result % 10; //это покажет третью цифру числа
+    int itog = result % 10; //это покажет третью цифру числа
 
-Console.WriteLine(itog);
+    Console.WriteLine(itog);
+}
